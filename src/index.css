@@ -1,0 +1,208 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffefe3be;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: rgb(173, 171, 171);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(91, 91, 91);
+  border-radius: 5px;
+}
+
+.navBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  margin: 5px;
+  min-width: 1500px;
+  background-color: rgb(255, 255, 255);
+  /* border-radius: 30px; */
+  overflow: hidden;
+  box-shadow: 3px 0 16px rgb(178, 178, 178);
+}
+
+.navBar .logo{
+  width: 120px;
+  height: 50px;
+  margin-left: -30px;
+
+}
+
+.navBar .logo img{
+  width: 100%;
+  height: 100%;
+}
+
+.navBar .search{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navBar .search input{
+  height: 35px;
+  width: 350px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 0.5px solid rgb(183, 183, 183);
+
+}
+
+.navBar .search button{
+  height: 35px;
+  width: 40px;
+  background-color: #F77D24;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid rgb(183, 183, 183);
+  border-left: none;
+  left: 311px;
+  position: absolute;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.navBar .search button ion-icon{
+  color: white;
+  font-size: 18px;
+}
+
+
+
+.navBar .login button{
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+
+  opacity: 0;
+}
+
+.navBar .login button ion-icon{
+  color: #F77D24;
+  font-size: 25px;
+  padding-left: 5px;
+}
+
+.navBar .login button p{
+  padding-right: 10px;
+  font-size: 17px;
+}
+
+
+
+
+
+
+.dashboardContainer{
+  background-color: rgb(255, 255, 255);
+  min-width: 1500px;
+  height: 100vh;
+  margin: 5px;
+  /* border-radius: 30px; */
+  padding: 30px;
+}
+
+.dashboardContainer .recipes{
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 15px;
+  margin-top: 30px;
+  padding: 10px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.dashboardContainer .recipes::-webkit-scrollbar{
+  width: 2px;
+}
+
+
+
+.dashboardContainer .recipes .recipeItem{
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.167);
+  cursor: default;
+}
+
+.dashboardContainer .recipes .recipeItem:hover{
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.293);
+}
+
+.dashboardContainer .recipes .recipeItem .img_cuisine{
+  width: 100%;
+  height: 200px;
+}
+
+.dashboardContainer .recipes .recipeItem .img_cuisine img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.dashboardContainer .recipes .recipeItem .title{
+  margin: 10px;
+  overflow: hidden;
+}
+
+.dashboardContainer .recipes .recipeItem .title p:first-child{
+  color: rgb(95, 95, 95);
+  padding-left: 5px ;
+  font-weight: 700;
+}
+
+.dashboardContainer .recipes .recipeItem .title p:last-child{
+  font-size: 18px;
+  margin: 10px 0;
+  padding-left: 5px;
+  font-weight: 600;
+}
+
+
+.dashboardContainer .recipes .recipeItem .rating ul{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding-left: 5px;
+  list-style: none;
+}
+
+.dashboardContainer .recipes .recipeItem .rating ul li:last-child{
+  padding-left: 10px;
+}
+
+
+
+a{
+  text-decoration: none;
+
+}
+a p{
+  color: black;
+}
+a ul li{
+  color: black;
+}
