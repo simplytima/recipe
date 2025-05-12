@@ -11,7 +11,7 @@ function RecipeItem({recipeItem}){
 
 
     return(
-        
+        <NavLink to={`/recipe/${recipeItem.id}`}>
             <div className="recipeItem" name='recipeItem'>
                 <div className="img_cuisine">
                     <img src={recipeItem.image}  />
@@ -38,6 +38,7 @@ function RecipeItem({recipeItem}){
                 </div>
 
             </div>
+            </NavLink>
         
 
     )
